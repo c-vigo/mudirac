@@ -55,8 +55,9 @@ utils/*.dat
 !utils/abundant.dat
 !utils/nuclear_radii.dat
 
-# VS Code
+# IDE Settings
 .vscode
+.idea
 
 # Tags files
 TAGS
