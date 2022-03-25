@@ -29,7 +29,7 @@ bool compareFiles(const std::string& p1, const std::string& p2) {
                       std::istreambuf_iterator<char>(f2.rdbuf()));
 }
 
-TEST_CASE("Atomic Transitions", "[atomTrans]")
+TEST_CASE("Atomic Transitions", "[AtomicTransition]")
 {
     auto t1 = AtomicTransition("K1:L1", 8000., 1.47E12);
     REQUIRE(t1.getName() == "K1:L1");
@@ -41,7 +41,7 @@ TEST_CASE("Atomic Transitions", "[atomTrans]")
     REQUIRE_THROWS(AtomicTransition("line", 1., -2));
 }
 
-TEST_CASE("Muonic Atom Data", "[muonicAtom]")
+TEST_CASE("Muonic Atom Data", "[MuonicAtomData]")
 {
     // Muonic Atom creation
     auto m = MuonicAtomData(3, 5);
