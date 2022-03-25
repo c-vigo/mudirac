@@ -20,3 +20,15 @@ target_link_libraries(mudiraclib INTERFACE debugtasks config output
                       atom boundary state potential
                       econfigs hydrogenic transforms 
                       wavefunction integrate elements input utils)
+
+# Install rules
+install(
+        TARGETS mudiraclib
+        DESTINATION lib
+)
+
+file( GLOB LIBHEADERS ${CMAKE_CURRENT_LIST_DIR}/*.hpp)
+install(
+        FILES ${LIBHEADERS}
+        DESTINATION include
+)
