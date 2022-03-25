@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Define the core files as static libraries
 add_subdirectory(lib)
+add_subdirectory(utils/MudiracDatabase)
 
 # Main executables
 add_subdirectory(src bin)
