@@ -1,5 +1,8 @@
-# mudirac
+# MuDirac
 A muonic atom Dirac equation solver.
+
+## Contact
+leandro.liborio@stfc.ac.uk
 
 ## Compiling
 
